@@ -54,6 +54,11 @@ form,
   line-height: 2.5rem;
 }
 
+.card-task {
+  font-size: 2rem;
+  text-align: center;
+}
+
 .rmv-btn {
   height: 4rem;
   width: fit-content;

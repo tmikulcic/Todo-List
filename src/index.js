@@ -1,3 +1,5 @@
+const { remove } = require('lodash');
+
 // Element declaration**
 let taskList = [];
 let button = document.querySelector('.add-button');
@@ -24,6 +26,10 @@ function addTask() {
   cardTask.textContent = `${task}`;
   cardTask.classList.add('card-task');
 
+  const cardCheckbox = document.createElement('input');
+  cardCheckbox.type = 'checkbox';
+  cardCheckbox.classList.add('checkbox');
+
   const removeCard = document.createElement('button');
   removeCard.textContent = 'Remove';
   removeCard.classList.add('rmv-btn');
@@ -34,5 +40,5 @@ function addTask() {
   const card = document.createElement('div');
   card.classList.add('card');
   contentDiv.appendChild(card);
-  card.append(cardTask, removeCard);
+  card.append(cardTask, cardCheckbox, removeCard);
 }
