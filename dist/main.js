@@ -17295,6 +17295,9 @@ function addTask() {
   const cardCheckbox = document.createElement('input');
   cardCheckbox.type = 'checkbox';
   cardCheckbox.classList.add('checkbox');
+  cardCheckbox.addEventListener('click', (e) => {
+    cardCheckbox.parentElement.style.textDecoration = 'line-through';
+  });
 
   const removeCard = document.createElement('button');
   removeCard.textContent = 'Remove';

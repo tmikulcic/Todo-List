@@ -59,6 +59,10 @@ form,
   text-align: center;
 }
 
+.checkbox {
+  transform: scale(3);
+}
+
 .rmv-btn {
   height: 4rem;
   width: fit-content;
